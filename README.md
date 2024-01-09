@@ -9,3 +9,16 @@ Lösningen bör vara att använda sig av List interfacet som både Linked List o
 samt att vårat main inte bör veta vilken typ av lista som används. Dvs main får bara kalla på metoder från 
 List-interfacet, inte några specifika LinkedList- eller ArrayList-funktioner.
 
+
+
+Question 2
+1. UML-diagram ligger i root som UmlDiagram.odg, det är en bildfil.
+
+2. Enligt det nuvarande designmönstret kan en Employee endast vara Engineer eller Manager, inte båda. För att 
+den ska kunna vara båda behövs att Employee (dvs superklassen) håller koll på vilken roll den anställde har,  istället
+för att subklasserna själva ska definiera sina roller.
+
+4. För att addera en removeRole kommer vi behöva jämföra en Role med en Role i listan i Employee, däför
+behövs equals of Hashcode i Role-klassen.
+
+
